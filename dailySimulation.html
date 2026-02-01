@@ -4,18 +4,36 @@
   <meta charset="UTF-8">
   <title>My Daily Schedule Simulation</title>
 </head>
+
 <body style="font-family: sans-serif; text-align: center; padding-top: 60px; background-color: #eef;">
 
   <h1>My Simulated Day</h1>
+
+  <!-- This div will display each activity as time progresses -->
   <div id="output" style="margin-top: 40px; font-size: 1.5rem;"></div>
 
   <script>
+    // Get the output element so we can update the screen dynamically
     const output = document.getElementById("output");
+
+    /*
+      Helper function to display messages.
+      Each message replaces the previous one, simulating time passing.
+    */
+    function showActivity(text) {
+      output.textContent = text;
+    }
+
+    /*
+      Surprise feature:
+      Random mood emoji to reflect how the day can feel different each time.
+    */
+    const moods = ["😄", "😐", "😴", "🔥", "😤"];
+    function randomMood() {
+      return moods[Math.floor(Math.random() * moods.length)];
+    }
+
+    /*
     
-    # ADD CODE HERE
-
-  </script>
-
 </body>
 </html>
-  
