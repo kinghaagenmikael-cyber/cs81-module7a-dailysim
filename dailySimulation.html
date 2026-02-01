@@ -34,6 +34,39 @@
     }
 
     /*
+      The schedule below uses setTimeout to simulate a full day.
+      Each timeout runs independently and fires after its delay.
+    */
+
+    setTimeout(() => {
+      showActivity("⏰ 7:00 AM — Wake up " + randomMood());
+    }, 1000);
+
+    setTimeout(() => {
+      showActivity("🍳 8:00 AM — Breakfast and get ready for class");
+    }, 2500);
+
+    setTimeout(() => {
+      showActivity("📚 10:00 AM — Attend classes");
+    }, 4000);
+
+    setTimeout(() => {
+      showActivity("🥗 1:00 PM — Lunch break");
+    }, 5500);
+
+    setTimeout(() => {
+      showActivity("🏃‍♂️ 4:00 PM — Track & Field Training (4 hours) 🔥");
+    }, 7000);
+
+    
+
+  </script>
+
+</body>
+</html>
+
+
+    /*
     
 </body>
 </html>
